@@ -74,6 +74,7 @@ if (process.argv.indexOf('-v') >= 0 || process.argv.indexOf('--version') >= 0) {
 		case 'eject':
 		case 'template':
 		case 'lint':
+		case 'check':
 		case 'license': {
 			const task = require('../commands/' + command).cli;
 			task(process.argv.slice(3));
