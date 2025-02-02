@@ -20,7 +20,7 @@ const rbConst = name =>
 		.toUpperCase() +
 	'_PATH';
 
-const iLibDirs = ['node_modules/@enact/i18n/ilib', 'node_modules/ilib', 'ilib'];
+const iLibDirs = ['node_modules/@enact/i18n/ilib', 'node_modules/ilib', 'ilib', '../../node_modules/ilib'];
 const globals = {
 	__DEV__: true,
 	ILIB_BASE_PATH: iLibDirs.find(f => fs.existsSync(path.join(app.context, f))) || iLibDirs[1],
